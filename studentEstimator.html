@@ -15,15 +15,16 @@
     <main>
 
         <p>Enter the number of students per course
-            <input id="perCourse" type="number">
+            <input id="perCourse" type="number" value = "13">
         </p>
 
         <p>Enter the number of courses per term
-            <input id="perTerm" type="number">
+            <input id="perTerm" type="number" value = "14"
+>
         </p>
 
         <p>Enter the number of terms
-            <input id="term" type="number">
+            <input id="term" type="number" value = "15">
         </p>
 
         <button id="clicky">Calculate</button>
@@ -34,12 +35,12 @@
         function trips(x, y, z) {
             return x * y * z
         }
-        document.getElementById("clicky").addEventListener("click", function () {
-            const x = parseInt(document.getElementById("perCourse").vaue)
-            const y = parseInt(document.getElementById("perTerm").vaue)
-            const z = parseInt(document.getElementById("term").vaue)
-            const ans = "The total is " + trips(x, y, z) +"."
-            document.getElementById("total").innerHTML = ans
+        document.getElementById('clicky').addEventListener('click', function () {
+            const x = parseInt(document.getElementById('perCourse').value)
+            const y = parseInt(document.getElementById('perTerm').value)
+            const z = parseInt(document.getElementById('term').value)
+            const ans =  'The total is ' + trips(x,y,z) +'.'
+            document.getElementById('total').innerHTML = ans
         })
 
     </script>
